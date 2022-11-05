@@ -1,0 +1,52 @@
+html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: dimgray;
+}
+body {
+  margin: 5% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  gap: 15px;
+}
+
+.container > button {
+  height: 100px;
+  width: 200px;
+  background-color: inherit;
+  border: 5px solid white;
+  border-radius: 10px;
+  font-size: 35px;
+  color: white;
+}
+
+.container.player > button.active:hover {
+  border-color: blue !important;
+  color: lightblue;
+}
+
+.output {
+  font-size: 40px;
+  margin: 10% 0;
+}
+
+.score {
+  font-size: 30px;
+  align-self: flex-start;
+}
+
+#playerScorePara {
+  color: blue;
+}
+
+#computerScorePara {
+  color: red;
+}
